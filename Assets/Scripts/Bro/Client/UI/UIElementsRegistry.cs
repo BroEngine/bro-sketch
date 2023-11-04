@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Bro.Client;
 using UnityEngine;
 
 namespace Bro.Client.UI
@@ -13,7 +12,7 @@ namespace Bro.Client.UI
 
         
         #if UNITY_EDITOR
-        [UnityEditor.MenuItem("Registries/UI/UI Elements")]
+        [UnityEditor.MenuItem("Registries/UI Elements")]
         public static void Edit()
         {
             Instance = null;
