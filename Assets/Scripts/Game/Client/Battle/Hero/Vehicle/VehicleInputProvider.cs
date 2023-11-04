@@ -5,7 +5,7 @@ using Game.Client.Vehicle;
 
 namespace Game.Client.Battle
 {
-    public class VehicleMovementProvider : IVehicleMovementInputProvider
+    public class VehicleInputProvider : IVehicleInputProvider
     {
         private readonly VehicleBehaviour _vehicleBehaviour;
         private readonly VehicleDynamics _vehicleDynamics;
@@ -13,11 +13,11 @@ namespace Game.Client.Battle
         private readonly Rigidbody _rigidbody;
         private readonly IClientContext _context;
 
-        private VehicleMovementInput _input = new VehicleMovementInput();
+        private VehicleInput _input = new VehicleInput();
         
-        VehicleMovementInput IVehicleMovementInputProvider.VehicleMovementInput => _input;
+        VehicleInput IVehicleInputProvider.VehicleInput => _input;
         
-        public VehicleMovementProvider(VehicleBehaviour vehicleBehaviour, IClientContext context)
+        public VehicleInputProvider(VehicleBehaviour vehicleBehaviour, IClientContext context)
         {
             _context = context;
             _vehicleBehaviour = vehicleBehaviour;

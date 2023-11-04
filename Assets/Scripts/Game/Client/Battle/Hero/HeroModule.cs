@@ -13,7 +13,7 @@ namespace Game.Client.Battle
         
         private HeroBehaviour _hero;
         private VehicleBehaviour _vehicle;
-        private IVehicleMovementInputProvider _inputProvider;
+        private IVehicleInputProvider _inputProvider;
         
         public HeroBehaviour Hero => _hero;
         public VehicleBehaviour Vehicle => _vehicle;
@@ -39,7 +39,7 @@ namespace Game.Client.Battle
             Debug.Assert(_vehicle != null);
             Debug.Assert(_hero != null);
           
-            _inputProvider = new VehicleMovementProvider(_vehicle, _context);
+            _inputProvider = new VehicleInputProvider(_vehicle, _context);
          
             // todo
             // _hero.Setup();
