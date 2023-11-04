@@ -9,7 +9,7 @@ namespace Game.Client
         private LocalProfileModule _profile;
         private UserData _userData;
 
-        public VehicleId CurrentVehicleId => _userData.VehicleId;
+        public VehicleId VehicleId => _userData.VehicleId;
         
         public void Setup(IClientContext context)
         {
