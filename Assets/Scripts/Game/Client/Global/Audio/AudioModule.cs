@@ -45,12 +45,12 @@ namespace Game.Client
 
         private void OnBattleLoadedEvent(BattleLoadedEvent e)
         {
-            AmbientPlay(AudioType.MusicRound);
+            AmbientPlay(AudioType.MusicBattle);
         }
 
         private void OnLobbyLoadedEvent(LobbyLoadedEvent e)
         {
-            AmbientPlay(AudioType.MusicMain);
+            AmbientPlay(AudioType.MusicLobby);
         }
         
         private void OnAudioEvent(AudioEvent e)
