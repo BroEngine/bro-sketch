@@ -8,6 +8,7 @@ namespace Game.Client.Battle
     public class HeroModule : IClientContextModule
     {
         private IClientContext _context;
+        private CameraModule _cameraModule;
         private SettingsModule _settingsModule;
         private InventoryModule _inventoryModule;
         
@@ -21,6 +22,7 @@ namespace Game.Client.Battle
         public void Setup(IClientContext context)
         {
             _context = context;
+            _cameraModule = context.Get<CameraModule>();
             _settingsModule = context.Get<SettingsModule>();
             _inventoryModule = context.GetGlobal<InventoryModule>();
         }
@@ -48,13 +50,21 @@ namespace Game.Client.Battle
          
             // todo
             // _hero.Setup();
-            // _vehicle.Setup();
-            // _vehicle.SetInputProvider(_inputProvider);
+            _vehicle.Setup();
+            _vehicle.SetInputProvider(_inputProvider);
+            
+            _context.AddDisposable(_context.Scheduler.ScheduleUpdate(OnUpdate));
         }
         
         public async UniTask Unload()
         {
             
+        }
+        
+        private void OnUpdate(float dt)
+        {
+            // todo move to camera module
+            _cameraModule.Move(_vehicle.transform.position, _vehicle.transform.rotation);
         }
     }
 }
