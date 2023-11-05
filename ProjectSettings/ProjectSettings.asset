@@ -735,7 +735,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: UNITASK_DOTWEEN_SUPPORT
+    Android: UNITASK_DOTWEEN_SUPPORT;RH_SerializedDictionary
     Standalone: UNITASK_DOTWEEN_SUPPORT;RH_SerializedDictionary
   additionalCompilerArguments: {}
   platformArchitecture: {}
