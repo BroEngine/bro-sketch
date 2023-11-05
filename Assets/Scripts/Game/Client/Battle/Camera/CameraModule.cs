@@ -8,6 +8,9 @@ namespace Game.Client.Battle
     {
         private IClientContext _context;
         private CameraBehaviour _camera;
+
+        private Vector3 _position;
+        private Quaternion _rotation;
         /* _data */
         
         public void Setup(IClientContext context)
@@ -29,13 +32,13 @@ namespace Game.Client.Battle
         
         private void OnLateUpdate(float dt)
         {
-            // _camera.Move(_data.Position, _data.Rotation);
+            _camera.Move(_position, _rotation);
         }
         
         public void Move(Vector3 position, Quaternion rotation)
         {
-            // _data.Position;
-            // _data.Rotation;
+            _position = position;
+            _rotation = rotation;
         }
     }
 }

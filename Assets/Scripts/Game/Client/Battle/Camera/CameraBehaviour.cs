@@ -1,3 +1,5 @@
+using Cinemachine;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Game.Client.Battle
@@ -11,8 +13,11 @@ namespace Game.Client.Battle
         [SerializeField] private float _cameraDistanceThreshold = 20.0f;
         
         [Space]
-        [SerializeField] private Camera _camera;
+        [SerializeField] [Required] private CinemachineVirtualCamera _virtualCamera;
         [SerializeField] private Transform _transformRoot;
+
+        [SerializeField] private Transform _transformPosition;
+        [SerializeField] private Transform _transformAim;
         
         private Quaternion _rotation;
         private Vector3 _position;
@@ -22,6 +27,8 @@ namespace Game.Client.Battle
             CheckThreshold(position, rotation);
             _position = position;
             _rotation = rotation;
+
+            _transformPosition.position = _position;
         }
         
         private void CheckThreshold(Vector3 position, Quaternion rotation)
@@ -32,12 +39,12 @@ namespace Game.Client.Battle
 
             if (angleDelta > _cameraAngleThreshold) 
             {
-                _transformRoot.rotation = _rotation;
+                _virtualCamera.PreviousStateIsValid = false;
             }
 
             if (positionDelta > _cameraDistanceThreshold) 
             {
-                _transformRoot.position = _position;
+                _virtualCamera.PreviousStateIsValid = false;
             }
         }
     }

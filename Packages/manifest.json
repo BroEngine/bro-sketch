@@ -4,6 +4,7 @@
     "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
     "com.rotaryheart.serializabledictionarylite": "https://github.com/RotaryHeart/SerializableDictionaryLite.git",
     "com.smkplus.custom-toolbar": "https://github.com/smkplus/CustomToolbar.git#master",
+    "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.0.7",
     "com.unity.feature.development": "1.0.1",
     "com.unity.nuget.newtonsoft-json": "3.2.1",
