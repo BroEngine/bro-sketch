@@ -21,6 +21,13 @@
       "dependencies": {},
       "hash": "f5b89b878627153ce82cd2a0c61679aa18364f09"
     },
+    "com.smkplus.custom-toolbar": {
+      "version": "https://github.com/smkplus/CustomToolbar.git#master",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "47188d759f95cc124a66d14b05cb39b7fab9e9a8"
+    },
     "com.unity.collab-proxy": {
       "version": "2.0.7",
       "depth": 0,

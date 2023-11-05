@@ -19,3 +19,4 @@ Dudnik Vladimir: vvdudnik@gmail.com
 - [Newtonsoft Json](https://www.newtonsoft.com/json)
 - [Russo One Font](https://fonts.google.com/specimen/Russo+One)
 - [GoogleApi](https://www.nuget.org/profiles/google-apis-packages)
+- [Custom Toolbar](https://github.com/smkplus/CustomToolbar)
