@@ -11,7 +11,7 @@ namespace Game.Client
         private readonly ConfigModule _configModule = new ConfigModule();
         private readonly InventoryModule _inventoryModule = new InventoryModule();
         
-        private readonly UIModule _uiModule = new UIModule(true, true);
+        private readonly UIModule _uiModule = new UIModule(new UISettings(), true, true);
         private readonly AudioModule _audioModule = new AudioModule();
         
         private readonly BattleSwitchingModule _battleSwitchingModule = new BattleSwitchingModule();

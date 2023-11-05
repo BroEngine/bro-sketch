@@ -6,17 +6,14 @@ namespace Bro.Client.UI
 {
     public class UIModule : IClientContextModule
     {
-        /* settings todo */
-        private readonly Vector2 _settingsResolution = new Vector2(1440, 3201);
-        private readonly float _settingsMatchFactor = 1.0f;
-        /* settings */
-        
+        private readonly UISettings _settings;
         private readonly UICreator _creator;
         private IClientContext _context;
         private UIManager _manager;
         
-        public UIModule(bool isPermanent, bool isEventSystem)
+        public UIModule(UISettings settings, bool isPermanent, bool isEventSystem)
         {
+            _settings = settings;
             _creator = new UICreator(isEventSystem, isPermanent);
         }
         
@@ -27,7 +24,7 @@ namespace Bro.Client.UI
         
         public async UniTask Load()
         {
-            _creator.CreateCanvas(_settingsResolution, _settingsMatchFactor);
+            _creator.CreateCanvas(_settings.Resolution, _settings.MatchFactor);
             _manager = new UIManager(_context, _creator.Root);
         }
         

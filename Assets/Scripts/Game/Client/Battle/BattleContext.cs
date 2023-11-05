@@ -8,7 +8,7 @@ namespace Game.Client.Battle
     {
         public readonly BattleConfig Config;
 
-        private readonly UIModule _uiModule = new UIModule(false, false);
+        private readonly UIModule _uiModule = new UIModule(new UISettings(), false, false);
         private readonly CameraModule _cameraModule = new CameraModule();
         
         private readonly SettingsModule _settingsModule = new SettingsModule();

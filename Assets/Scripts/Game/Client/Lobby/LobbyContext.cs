@@ -5,7 +5,7 @@ namespace Game.Client.Lobby
 {
     public class LobbyContext : ClientContext
     {
-        private readonly UIModule _uiModule = new UIModule(false, false);
+        private readonly UIModule _uiModule = new UIModule(new UISettings(), false, false);
         private readonly LobbyCameraModule _lobbyCameraModule = new LobbyCameraModule();
         private readonly LobbyLifecycleModule _lobbyLifecycleModule = new LobbyLifecycleModule();
         
