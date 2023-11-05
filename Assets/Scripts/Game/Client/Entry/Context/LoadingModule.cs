@@ -55,7 +55,7 @@ namespace Game.Client.Entry
         private async UniTask ProcessBattle(string levelId)
         {
             var config = new BattleConfig();
-            _context.GetGlobal<BattleSwitchingModule>().LoadRound(config);
+            _context.GetGlobal<BattleSwitchingModule>().LoadBattle(config);
         }
         
         private async UniTask ProcessLobby()

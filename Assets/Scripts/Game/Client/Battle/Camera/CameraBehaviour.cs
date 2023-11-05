@@ -11,6 +11,7 @@ namespace Game.Client.Battle
         [SerializeField] private float _cameraDistanceThreshold = 20.0f;
         
         [Space]
+        [SerializeField] private Camera _camera;
         [SerializeField] private Transform _transformRoot;
         
         private Quaternion _rotation;

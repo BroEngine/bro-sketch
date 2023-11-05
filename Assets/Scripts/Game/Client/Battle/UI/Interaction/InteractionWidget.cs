@@ -32,7 +32,8 @@ namespace Game.Client.Battle.UI
 
         private void OnButtonExit()
         {
-            
+            var switchModule = _context.GetGlobal<LobbySwitchingModule>();
+            switchModule.LoadLobby();
         }
     }
 }

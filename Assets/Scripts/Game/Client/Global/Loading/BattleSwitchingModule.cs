@@ -28,7 +28,7 @@ namespace Game.Client
          
         }
 
-        public void LoadRound(BattleConfig config)
+        public void LoadBattle(BattleConfig config)
         {
             if (!_isSwitching)
             {

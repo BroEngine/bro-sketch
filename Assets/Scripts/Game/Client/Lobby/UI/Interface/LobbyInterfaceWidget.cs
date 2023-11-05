@@ -1,4 +1,5 @@
 using Bro.Client.UI;
+using Game.Client.Battle;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,8 @@ namespace Game.Client.Lobby.UI
         
         private void OnButtonStart()
         {
-            // todo load battle
+            var switchModule = _context.GetGlobal<BattleSwitchingModule>();
+            switchModule.LoadBattle(new BattleConfig());
         }
     }
 }
