@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8061b6167dc34b6d9941627389d88ff9, type: 3}
+  m_Name: registry_audio
+  m_EditorClassIdentifier: 
+  _data:
+    _keys:
+    - music_battle
+    - music_lobby
+    _values:
+    - {fileID: 8300000, guid: b917f98ea27424c46aea481f7442446c, type: 3}
+    - {fileID: 8300000, guid: b917f98ea27424c46aea481f7442446c, type: 3}
+  _volume:
+    _keys: []
+    _values: []

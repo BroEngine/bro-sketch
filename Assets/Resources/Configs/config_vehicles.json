@@ -1,0 +1,9 @@
+{
+  "default_config": null,
+  "data": {
+    "vehicle_01_mary": {
+      "vehicle_id": "vehicle_01_mary",
+      "health": 100
+    }
+  }
+}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388169dce9b45479ba1804d3fafb276, type: 3}
+  m_Name: registry_ui_elements
+  m_EditorClassIdentifier: 
+  _global:
+  - {fileID: 25319324911160909, guid: 84f2619f23e1f4f389ef99ec651d859f, type: 3}
+  - {fileID: 6857986838748302694, guid: ffec1a347484f4b90b90511f14cd1708, type: 3}
+  - {fileID: 664739543394077600, guid: c5c90c38a72344534919010e1e22aab6, type: 3}
+  _lobby:
+  - {fileID: 6850510540171207332, guid: 117600e4219d54bc380ab142fdb77a6a, type: 3}
+  - {fileID: 2320120149040217078, guid: 0e4f21bad45a84ad4a8073a103fc3368, type: 3}
+  _battle:
+  - {fileID: 5555964752199531453, guid: 89b059e6069054d6995decc71c27df8e, type: 3}

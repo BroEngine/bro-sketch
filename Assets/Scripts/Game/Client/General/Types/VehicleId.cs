@@ -11,6 +11,6 @@ namespace Game.Client
     public enum VehicleId
     {
         [EnumMember(Value = "undefined")] Undefined,
-        [EnumMember(Value = "vehicle_01_marry")] Vehicle01Marry
+        [EnumMember(Value = "vehicle_01_mary")] Vehicle01Mary
     }
 }

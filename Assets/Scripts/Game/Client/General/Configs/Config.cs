@@ -7,6 +7,6 @@ namespace Game.Client
         public static readonly string SupportEmail = "support@gmail.com"; 
         public static readonly string SupportTitle = "Support"; 
         
-        public static readonly string PrivacyPolicy = "https://xxx.com/privacy/";
+        public static readonly string PrivacyPolicy = "https://broengine.org/privacy/";
     }
 }

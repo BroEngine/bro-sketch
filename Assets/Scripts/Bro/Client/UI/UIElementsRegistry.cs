@@ -8,7 +8,7 @@ namespace Bro.Client.UI
     {
         [SerializeField] private List<Window> _global = new List<Window>();
         [SerializeField] private List<Window> _lobby = new List<Window>();
-        [SerializeField] private List<Window> _round = new List<Window>();
+        [SerializeField] private List<Window> _battle = new List<Window>();
 
         
         #if UNITY_EDITOR
@@ -23,7 +23,7 @@ namespace Bro.Client.UI
         
         public Window Get<T>() where T : Window
         {
-            var window = Get<T>(_global, _lobby, _round);
+            var window = Get<T>(_global, _lobby, _battle);
             return window;
         }
         

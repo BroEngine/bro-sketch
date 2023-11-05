@@ -45,7 +45,7 @@ namespace Game.Client
             {
                 _userData.SetHardCurrency(100); // todo
                 _userData.SetSoftCurrency(200); // todo
-                _userData.SetCurrentVehicleId(VehicleId.Vehicle01Marry); // todo
+                _userData.SetCurrentVehicleId(VehicleId.Vehicle01Mary); // todo
                 _userData.SetInventoryInitialized();
             }
         }
