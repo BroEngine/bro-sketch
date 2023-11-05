@@ -15,9 +15,8 @@ namespace Game.Client.Battle
         [Space]
         [SerializeField] [Required] private CinemachineVirtualCamera _virtualCamera;
         [SerializeField] private Transform _transformRoot;
-
-        [SerializeField] private Transform _transformPosition;
-        [SerializeField] private Transform _transformAim;
+        [SerializeField] private Transform _transformDummy;
+  
         
         private Quaternion _rotation;
         private Vector3 _position;
@@ -28,7 +27,8 @@ namespace Game.Client.Battle
             _position = position;
             _rotation = rotation;
 
-            _transformPosition.position = _position;
+            _transformDummy.position = _position;
+            _transformDummy.rotation = _rotation;
         }
         
         private void CheckThreshold(Vector3 position, Quaternion rotation)
