@@ -50,7 +50,7 @@ namespace Game.Client.Vehicle
             UpdateMoveIndicators(deltaTime);
             UpdateWheelsVisuals();
             UpdateSuspensionVisuals(deltaTime);
-            _vehicleConfiguration.NitroEffect.SetActive(_vehicleMovement.IsNitroActive);
+            // _vehicleConfiguration.NitroEffect.SetActive(_vehicleMovement.IsNitroActive);
         }
 
         private void UpdateMoveIndicators(float deltaTime)

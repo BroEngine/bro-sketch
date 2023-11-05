@@ -38,4 +38,4 @@ MonoBehaviour:
     _keyValues: 01000000
     _keys: 01000000
     _values:
-    - _prefab: {fileID: 0}
+    - _prefab: {fileID: 5781611053273343146, guid: 832c8b0c5fa1f4241bd4684a1be89e1c, type: 3}

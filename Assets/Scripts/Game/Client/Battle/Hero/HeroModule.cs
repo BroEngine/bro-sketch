@@ -31,7 +31,10 @@ namespace Game.Client.Battle
             var vehicleDescription = VehiclesRegistry.Instance.GetVehicle(vehicleId);
             var prefab = vehicleDescription.Prefab;
 
-            Debug.LogError($"hero prefab is null ({vehicleId})");
+            if (prefab == null)
+            {
+                Debug.LogError($"hero prefab is null ({vehicleId})");
+            }
             
             var vehicleObject = Object.Instantiate(prefab);
             

@@ -40,7 +40,7 @@ namespace Game.Client.Vehicle
         public Rigidbody Rigidbody => _rigidbody;
         public Collider BodyCollider => _bodyCollider;
         public Transform BodyTransform => _bodyTransform;
-        public GameObject NitroEffect => _nitroEffect;
+        // public GameObject NitroEffect => _nitroEffect;
         
         public List<WheelCollider> FrontWheelColliders
         {
